@@ -1,0 +1,36 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "Miscellaneous commands cli",
+  "main": "bin/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appuler/CLI.git"
+  },
+  "author": "Aditya V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appuler/CLI/issues"
+  },
+  "homepage": "https://github.com/appuler/CLI#readme",
+  "bin": {
+    "mycli": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.7.0",
+    "gradient": "^0.2.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.22",
+    "nanospinner": "^1.1.0",
+    "yargs": "^17.7.2",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
