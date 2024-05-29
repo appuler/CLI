@@ -1,2 +1,2 @@
-##This will be used to make Miscellaneous Commands to Simplify tasks in my daily life
+This will be used to make Miscellaneous Commands to Simplify tasks in my daily life
 
