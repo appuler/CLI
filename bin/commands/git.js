@@ -28,6 +28,10 @@ gitAddAll.on('close', (code) => {
 
 
 // Part 2: Committing all the files
+let args = process.argv;
+args.forEach((value, index, array) => {
+  console.log(`${index}: ${value} , ${array}`);
+});
 let message = 'Finished Part 2';
 const gitCommitAll = spawn('git', ['commit', '-m', `"${message}"`]);
 
