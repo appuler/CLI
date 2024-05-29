@@ -46,3 +46,23 @@ gitCommitAll.on('close', (code) => {
     console.log(`Process Exited with Code: ${code}`);
   }
 });
+
+// Part 3: Pushing to Remote Repository
+let repo = 'main';
+const gitPushAll = spawn('git', ['push', 'origin', repo]);
+
+gitPushAll.stdout.on('data', (data) => {
+  console.log(`Pushing: \n${data}`);
+});
+
+gitPushAll.stderr.on('data', (data) => {
+  console.log(`Error Occured:\n${data}`);
+});
+
+gitPushAll.on('close', (code) => {
+  if (code == 0) {
+  console.log('All Files Pushed');
+  } else {
+    console.log(`Process Exited with Code: ${code}`);
+  }
+});
