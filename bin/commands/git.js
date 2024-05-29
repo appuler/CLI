@@ -19,7 +19,11 @@ gitAddAll.stderr.on('data', (data) => {
 });
 
 gitAddAll.on('close', (code) => {
+  if (code === 0) {
+    console.log("Files Added");
+  } else {
   console.log(`Process Exited with Code: ${code}`);
+  }
 });
 
 
@@ -36,5 +40,9 @@ gitCommitAll.stderr.on('data', (data) => {
 });
 
 gitCommitAll.on('close', (code) => {
-  console.log(`Process Exited with Code: ${code}`);
+  if (code == 0) {
+  console.log('All Files Committed');
+  } else {
+    console.log(`Process Exited with Code: ${code}`);
+  }
 });
